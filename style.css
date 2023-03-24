@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4E6E81;
+    font-family: tahoma;
+}
+
+section {
+    margin: 30px;   
+}
+
+table {
+    margin: 10px auto;
+    border-spacing: 30px;
+    cursor: pointer;
+}
+
+th {
+    width: 180px;
+    height: 40px;
+    background: #E5FDD1;
+    color: #FF0303;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+div {
+    text-decoration: none;
+    margin: 15px; 
+}
+
+section:hover th {
+    width: 180px;
+    height: 120px;
+    background: #FF0303;
+    color: #E5FDD1;
+    border-radius: 90px;
+    box-shadow: 2px 2px 2px 2px #2E3840;
+    transform: rotatey(2turn);
+}
+
+th:nth-of-type(1n) {
+    transition-timing-function: linear; 
+}
+
+/* Su Keyframes */
+
+.key {
+    margin: 200px auto;
+    height: 200px;
+    width: 200px;
+    background: white;
+    animation: move 10s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px)
+    }
+    20% {
+        transform: translateX(250px);
+        background: #9A208C;
+    }
+    40% {
+        transform: translate3d(250px, 250px, 0px);
+        background: #E11299;
+    }
+    60% {
+        transform: translate3d(-250px, 250px, 0px);
+        background: #E11299;
+    }
+    80% {
+        transform: translate3d(-250px, 0px, 0px);
+        background: #9A208C;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+
+.key1 {
+    height: 10px;
+    width: 10px;
+    background: black;
+    animation: move1 5s infinite linear;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate3d(0px, 0px, 0px)
+    }
+    2% {
+        transform: translate3d(-15px, 0px, 0px);
+        /* background: #9A208C; */
+    }
+    40% {
+        transform: translate3d(-15px, 191px, 0px);
+        /* background: #E11299; */
+    }
+    60% {
+        transform: translate3d(175px, 191px, 0px);
+        /* background: #E11299; */ 
+    }
+    80% {
+        transform: translate3d(175px, 0px, 0px);
+        /* background: #9A208C; */ 
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
